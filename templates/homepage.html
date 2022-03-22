@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IPL Match Prediction</title>
+    <link rel="stylesheet" href="static/css/home.css">
+    <style>
+        body {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+          overflow: hidden;
+          background-color: #333;
+        }
+
+        .topnav a {
+          float: left;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+
+        .topnav a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+
+        .topnav a.active {
+          background-color: #04AA6D;
+          color: white;
+        }
+    </style>
+  </head>
+  <body>
+      <div class="topnav">
+      <a class="active" href="/">Home</a>
+      <a href="/stats">Team Statistics</a>
+      <a href="/prediction">Win Prediction</a>
+    </div>
+
+    <div style="padding-left:16px">
+      <h2 style="text-align:center;"></h2>
+    </div>
+    <div class="shell">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="wsk-cp-product">
+              <div class="wsk-cp-img">
+                <img src="https://nozzle.s3-ap-southeast-1.amazonaws.com/shop_106135/csk1_1614850293.jpg" alt="Product" class="img-responsive"/>
+              </div>
+              <div class="wsk-cp-text">
+                <div class="category">
+                  <span> <img src="https://www.iplt20.com/assets/images/vishal/ico-trophy.png"/> 2010,2011,2018,2021</span>
+                </div>
+                <form action="/team" method="GET">
+                  <input type="hidden" id="teamName" name="teamName" value="Chennai Super Kings">
+                  <div class="title-product">
+                    <h3>Chennai Super Kings</h3>
+                  </div>
+                  <div class="description-prod">
+                    <p>Captain : Mahendra Singh Dhoni</p>
+                    <p>Coach : Stephen Fleming</p>
+                  </div>
+                    <div class="container">
+                        <button type="submit" value="Chennai Super Kings" class="submit-feedback">
+                          <div class="submit-feedback">Click for the more Details</div>
+                        </button>
+                    </div>
+                  </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="wsk-cp-product">
+              <div class="wsk-cp-img">
+                <img src="https://cdn.shopify.com/s/files/1/0351/4721/9082/products/coastrcdelhicapitalscrest@2x.jpg?v=1618759074" alt="Product" class="img-responsive" />
+              </div>
+              <form action="/team" method="GET">
+                <input type="hidden" name="teamName" value="Delhi Capitals">
+                <div class="wsk-cp-text">
+                <div class="title-product">
+                  <h3>Delhi Capitals</h3>
+                </div>
+                <div class="description-prod">
+                  <p>Captain : Rishabh Pant</p>
+                  <p>Coach : Ricky Pointing</p>
+                </div>
+                <div class="container">
+                      <button type="submit" value="Delhi Capitals" class="submit-feedback">
+                        <div class="submit-feedback">Click for the more Details</div>
+                      </button>
+                  </div>
+                </div>
+              </form>
+
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="wsk-cp-product">
+              <div class="wsk-cp-img">
+                <img src="https://i.pinimg.com/originals/7e/5f/d1/7e5fd1378481990f3828500c82a6dde1.png" alt="Product" class="img-responsive" />
+              </div>
+              <form action="/team" method="GET">
+                <input type="hidden"  name="teamName" value="Kolkata Knight Riders">
+                  <div class="wsk-cp-text">
+                    <div class="category">
+                      <span> <img src="https://www.iplt20.com/assets/images/vishal/ico-trophy.png"/> 2012,2014,2021</span>
+                    </div>
+                    <div class="title-product">
+                      <h3>Kolkata Knight Riders</h3>
+                    </div>
+                    <div class="description-prod">
+                      <p>Captain : Rishabh Pant</p>
+                      <p>Coach : Ricky Pointing</p>
+                    </div>
+                  <div class="container">
+                       <button type="submit" value="Kolkata Knight Riders" class="submit-feedback">
+                        <div class="submit-feedback">Click for the more Details</div>
+                       </button>
+                  </div>
+                </div>
+
+              </form>
+
+          </div>
+          </div>
+          <div class="col-md-3">
+            <div class="wsk-cp-product">
+              <div class="wsk-cp-img">
+                <img src="https://cutewallpaper.org/21/mumbai-indians-logo/MI-Logo-Chakra-Mumbai-Indians-Badges-The-Souled-Store.jpg" alt="Product" class="img-responsive" />
+              </div>
+              <form action="/team" method="GET">
+                <input type="hidden"  name="teamName" value="Mumbai Indians">
+                <div class="wsk-cp-text">
+                  <div class="category">
+                    <span> <img src="https://www.iplt20.com/assets/images/vishal/ico-trophy.png"/> 2013,2015,2017,2019,2020</span>
+                  </div>
+                  <div class="title-product">
+                    <h3>Mumbai Indians</h3>
+                  </div>
+                  <div class="description-prod">
+                    <p>Captain : Rohit Sharma</p>
+                    <p>Coach :  Mahela Jayawardene</p>
+                  </div>
+                <div class="container">
+                  <button type="submit" value="Mumbai Indians" class="submit-feedback">
+                      <div class="submit-feedback">Click for the more Details</div>
+                  </button>
+                </div>
+              </div>
+
+              </form>
+
+          </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="wsk-cp-product">
+              <div class="wsk-cp-img">
+                <img src="https://www.trophykart.in/media/catalog/product/cache/image/800x800/e9c3970ab036de70892d86c6d221abfe/k/x/kxiip_magnet.jpg" alt="Product" class="img-responsive" />
+              </div>
+              <form action="/team" method="GET">
+                <input type="hidden"  name="teamName" value="Kings XI Punjab">
+                <div class="wsk-cp-text">
+                  <div class="title-product">
+                    <h3>Kings XI Punjab</h3>
+                  </div>
+                  <div class="description-prod">
+                    <p>Captain : KL Rahul</p>
+                    <p>Coach : Anil Kumble</p>
+                  </div>
+                  <div class="container">
+                    <button type="submit" value="Kings XI Punjab" class="submit-feedback">
+                        <div class="submit-feedback">Click for the more Details</div>
+                    </button>
+                  </div>
+                </div>
+              </form>
+
+          </div>
+          </div>
+          <div class="col-md-3">
+            <div class="wsk-cp-product">
+              <div class="wsk-cp-img">
+                <img src="https://iplt20zone.com/images/rajasthan-royals.jpg" alt="Product" class="img-responsive" />
+              </div>
+              <form action="/team" method="GET">
+                <input type="hidden"  name="teamName" value="Rajasthan Royals">
+                <div class="wsk-cp-text">
+                  <div class="category">
+                    <span> <img src="https://www.iplt20.com/assets/images/vishal/ico-trophy.png"/>2008</span>
+                  </div>
+                  <div class="title-product">
+                    <h3>Rajasthan Royals</h3>
+                  </div>
+                  <div class="description-prod">
+                    <p>Captain : Sanju Samson</p>
+                    <p>Coach :   Trevor Penney</p>
+                  </div>
+                  <div class="container">
+                    <button type="submit" value="Rajasthan Royals" class="submit-feedback">
+                      <div class="submit-feedback">Click for the more Details</div>
+                    </button>
+                  </div>
+                </div>
+              </form>
+
+          </div>
+          </div>
+          <div class="col-md-3">
+            <div class="wsk-cp-product">
+              <div class="wsk-cp-img">
+                <img src="https://www.sentinelassam.com/wp-content/uploads/2019/03/rcb.jpg" alt="Product" class="img-responsive" />
+              </div>
+              <form action="/team" method="GET">
+                <input type="hidden"  name="teamName" value="Royal Challengers Bangalore">
+                <div class="wsk-cp-text">
+                  <div class="title-product">
+                    <h3>Royal Challengers Bangalore</h3>
+                  </div>
+                  <div class="description-prod">
+                    <p>Captain : Virat Kohli</p>
+                    <p>Coach :  Sanjay Bangar</p>
+                  </div>
+                  <div class="container">
+                    <button type="submit" value="Royal Challengers Bangalore" class="submit-feedback">
+                        <div class="submit-feedback">Click for the more Details</div>
+                    </button>
+                    </div>
+                </div>
+              </form>
+
+          </div>
+          </div>
+          <div class="col-md-3">
+            <div class="wsk-cp-product">
+              <div class="wsk-cp-img">
+                <img src="https://i.pinimg.com/originals/b2/2b/5d/b22b5ddf29c04f62295e20e378a51d78.png" alt="Product" class="img-responsive" />
+              </div>
+              <form action="/team" method="GET">
+                <input type="hidden"  name="teamName" value="Sunrisers Hyderabad">
+                <div class="wsk-cp-text">
+                  <div class="category">
+                    <span> <img src="https://www.iplt20.com/assets/images/vishal/ico-trophy.png"/>2016</span>
+                  </div>
+                  <div class="title-product">
+                    <h3>Sunrisers Hyderabad</h3>
+                  </div>
+                  <div class="description-prod">
+                    <p>Captain : Kane Williamson</p>
+                    <p>Coach : Trevor Bayliss</p>
+                  </div>
+                  <div class="container">
+                    <button type="submit" value="Sunrisers Hyderabad" class="submit-feedback">
+                      <div class="submit-feedback">Click for the more Details</div>
+                    </button>
+                  </div>
+                </div>
+              </form>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

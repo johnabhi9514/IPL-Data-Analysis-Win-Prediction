@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Team Win Prediction</title>
+    <link rel="stylesheet" href="static/css/winPrediction.css">
+    <style>
+        body {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+          background-color:#e6f2ff;
+         }
+
+        .topnav {
+          overflow: hidden;
+          background-color: #333;
+        }
+
+        .topnav a {
+          float: left;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+
+        .topnav a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+
+        .topnav a.active {
+          background-color: #04AA6D;
+          color: white;
+        }
+    </style>
+</head>
+<body>
+ <div class="topnav">
+      <a class="active" href="/">Home</a>
+      <a href="/stats">Team Statistics</a>
+      <a href="/prediction">Win Prediction</a>
+ </div>
+ <br>
+ <br>
+ <h3 style="text-align: center;"> PLease Enter below feilds to predict the winning Team</h3>
+<section id="header-container">
+  <form action="/result" method="GET">
+      <label for="batting" style="text-align: center;">Select the batting team</label>
+          <br>
+          <br>
+          <select id="batting" name="batting">
+            <option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
+            <option value="Mumbai Indians">Mumbai Indians</option>
+            <option value='Royal Challengers Bangalore'>Royal Challengers Bangalore</option>
+            <option value='Kolkata Knight Riders'>Kolkata Knight Riders</option>
+            <option value='Chennai Super Kings'>Chennai Super Kings</option>
+            <option value='Rajasthan Royals'>Rajasthan Royals</option>
+            <option value='Delhi Capitals'>Delhi Capitals</option>
+          </select>
+      <br>
+      <br>
+      <label for="bowling" style="text-align: center;">Select the bowling team</label>
+          <br>
+          <br>
+          <select id="bowling" name="bowling">
+            <option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
+            <option value="Mumbai Indians">Mumbai Indians</option>
+            <option value='Royal Challengers Bangalore'>Royal Challengers Bangalore</option>
+            <option value='Kolkata Knight Riders'>Kolkata Knight Riders</option>
+            <option value='Chennai Super Kings'>Chennai Super Kings</option>
+            <option value='Rajasthan Royals'>Rajasthan Royals</option>
+            <option value='Delhi Capitals'>Delhi Capitals</option>
+          </select>
+      <br>
+      <br>
+      <label for="city" style="text-align: center;">Select host city</label>
+          <br>
+          <br>
+          <select id="city" name="city">
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value='Mumbai'>Mumbai</option>
+            <option value='Indore'>Indore</option>
+            <option value='Kolkata'>Kolkata</option>
+            <option value='Delhi'>Delhi</option>
+            <option value='Chandigarh'>Chandigarh</option>
+            <option value='Jaipur'>Jaipur</option>
+             <option value='Chennai'>Chennai</option>
+             <option value='Cape Town'>Cape Town</option>
+              <option value='Port Elizabeth'>Port Elizabeth</option>
+              <option value='Durban'>Durban</option>
+              <option value='Centurion'>Centurion</option>
+              <option value='East London'>East London</option>
+              <option value='Johannesburg'>Johannesburg</option>
+              <option value='Kimberley'>Kimberley</option>
+              <option value='Bloemfontein'>Bloemfontein</option>
+              <option value='Ahmedabad'>Ahmedabad</option>
+              <option value='Cuttack'>Cuttack</option>
+              <option value='Nagpur'>Nagpur</option>
+              <option value='Dharamsala'>Dharamsala</option>
+              <option value='Visakhapatnam'>Visakhapatnam</option>
+              <option value='Pune'>Pune</option>
+              <option value='Raipur'>Raipur</option>
+              <option value='Mohali'>Mohali</option>
+              <option value='Abu Dhabi'>Abu Dhabi</option>
+              <option value='Sharjah'>Sharjah</option>
+              <option value='Bengaluru'>Bengaluru</option>
+          </select>
+      <br>
+      <br>
+      <label for="Target" style="text-align: center;">Target</label>
+          <br>
+          <br>
+            <input type="text" id="Target" name="Target" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" )>
+      <br>
+      <br>
+      <label for="Score" style="text-align: center;">Score</label>
+          <br>
+          <br>
+            <input type="text" id="Score" name="Score" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" )>
+      <br>
+      <br>
+      <label for="Overs completed" style="text-align: center;">Overs completed</label>
+          <br>
+          <br>
+            <input type="text" id="Overs completed" name="Overs completed" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" >
+      <br>
+      <br>
+      <label for="Wickets out" style="text-align: center;">Wickets out</label>
+          <br>
+          <br>
+            <input type="text" id="Wickets out" name="Wickets out" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" >
+      <br>
+      <br>
+      <input type="submit" value="Submit">
+      <br>
+      <br>
+  </form>
+
+</section>
+<script src="{{ url_for('static', filename='js/pred.js')}}"></script>
+
+</body>
+</html>
