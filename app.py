@@ -16,7 +16,7 @@ import pickle
 
 app = Flask(__name__)
 
-@app.route("/stats")
+@app.route("ipl-win-predict-dataanalysis.herokuapp.com/stats")
 def visualize():
     df= pd.read_csv('IPL Matches 2008-2020.csv' ,index_col=False)
     fig,ax = plt.subplots(figsize=(20,10))
@@ -71,7 +71,7 @@ def visualize():
 def header():
     return render_template("homepage.html")
 
-@app.route("/team",methods=['GET'])
+@app.route("ipl-win-predict-dataanalysis.herokuapp.com/team",methods=['GET'])
 def team():
     if request.method == 'GET':
         teamNameSarch=request.args['teamName']
